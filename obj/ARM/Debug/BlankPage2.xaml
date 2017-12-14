@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Attendo.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Attendo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gold">
+        <TextBox x:ConnectionId='1' Background="White" x:Name = "Roll" HorizontalAlignment="Left" Height="57" Margin="438,156,0,0" TextWrapping="Wrap" PlaceholderText="                     Enter Roll No." VerticalAlignment="Top" Width="330"/>
+        <Button x:ConnectionId='2' Background="White" Content="Select Image" HorizontalAlignment="Left" Height="51" Margin="513,261,0,0" VerticalAlignment="Top" Width="204"                     RenderTransformOrigin="0.5,1.588"/>
+        <HyperlinkButton x:ConnectionId='3' Background="White" Content="Back"                                HorizontalAlignment="Left" Height="48" Margin="513,345,0,0" VerticalAlignment="Top" Width="204"/>
+
+    </Grid>
+</Page>
+

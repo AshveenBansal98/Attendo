@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Attendo.BlankPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Attendo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gold">
+        <TextBox x:ConnectionId='1' Background="Gold" Name ="About" IsReadOnly="True"  HorizontalAlignment="Left" Height="420" Margin="213,120,0,0" TextWrapping="Wrap" Text="&#xD;There are a total of 5 buttons: 'Add', 'Help', 'Detect', 'Show', 'Delete'.&#xD;&#xD;Add:&#xD;&#xD;This is used to add a person with a roll number b/w 1 to 10(this is a sample version for a class with 10 people).&#xD;Write the roll number of the person you want to add in the text box given and select an image using ImagePicker.&#xD;That image will be used to detect that person.  Many photos of the same person can be added to the given roll number.&#xD;Text box will show 'succeeded' when photo is successfully added.&#xD;&#xD;Detect:&#xD;&#xD;It is used to detect the faces in an uploaded photo.  It will show the roll no. of person(s) detected in the textbox.&#xD;It will also show the face rectangle on the uploaded photo.  It will mark the attendance on the date on which the photo&#xD;is uploaded.  (Date is taken automatically from system)&#xD;&#xD;(There is a known bug: If photo is in portrait mode, it will run correctly but the face rectangle will be in landscape mode.)&#xD;&#xD;Show:&#xD;&#xD;It takes a given date as input and show status on that date. (Default value is 'absent' i.e. if a photo was not uploaded on&#xD;a given date, it will show all students to be absent.  Same applies to the case that there was no class on the input date.)&#xD;&#xD;Delete:&#xD;&#xD;It deletes a person from the database.&#xD;&#xD;(There is a known bug:  It doesn't delete the faces of that person or delete him from SQL database.  His data in previous classes&#xD;will be preserved though.  His roll number can be used again for another person.  His undeleted faces will not be linked to the newly &#xD;added person with the same roll number as he had before he was deleted.)&#xD;&#xD;&#xA;Hope you like the app!&#xD;&#xA;&#xD;&#xA;- Team Nemesis&#xD;&#xA;&#x9;" VerticalAlignment="Top" Width="855"/>
+        <HyperlinkButton x:ConnectionId='2' Background="White" Content="Back"                                 HorizontalAlignment="Left" Height="57" Margin="513,576,0,0" VerticalAlignment="Top" Width="285"/>
+
+    </Grid>
+</Page>
+

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Attendo.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Attendo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gold">
+        <Canvas x:ConnectionId='1' x:Name="VisualizationCanvas" Visibility="Visible" Margin="126,0,108,189"  Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <CaptureElement x:ConnectionId='2' Name="PreviewControl" Stretch="Uniform" Margin="126,0,108,189" Grid.Row="0"/>
+        <TextBox x:ConnectionId='3' Background="White" x:Name ="Roll" HorizontalAlignment="Left" Height="96" Margin="425,572,0,0" Text="Roll no.(s) of Identified Persons: " TextWrapping="Wrap" VerticalAlignment="Top" Width="320"/>
+        <Button x:ConnectionId='4' Background="White" Content="Detect Persons" HorizontalAlignment="Left" Height="96" Margin="852,572,0,0" VerticalAlignment="Top" Width="320"                     />
+        <HyperlinkButton x:ConnectionId='5' Background="White" Content="Back"                                 HorizontalAlignment="Left" Height="96" Margin="126,572,0,0" VerticalAlignment="Top" Width="219"/>
+
+    </Grid>
+</Page>
+
